@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nayapay Debit Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="credit-card">
+        <div class="card-number" id="cardNumber">4000 1234 9012 3456</div>
+        <div class="card-name" id="cardName">Abdul Basit</div>
+        <div class="valid-up-to" id="validUpTo">06/26</div>
+      </div>
+
+      <div class="input-container">
+        <input
+          type="text"
+          class="input-field"
+          id="cardNumberInput"
+          placeholder="Card Number"
+        />
+        <input
+          type="text"
+          class="input-field"
+          id="cardNameInput"
+          placeholder="Cardholder Name"
+        />
+        <input
+          type="text"
+          class="input-field"
+          id="validUpToInput"
+          placeholder="Valid Thru (MM/YY)"
+        />
+      </div>
+
+      <button class="button type1">
+        <span class="btn-txt" onclick="updateCard()">Update Card</span>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
