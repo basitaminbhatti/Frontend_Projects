@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: "Acme";
+    background: url('https://images.unsplash.com/photo-1543421991-57b1620b205e?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    no-repeat center center/cover;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .hover_card:hover:nth-child(2) {
+    box-shadow: 10px 10px 50px rgb(13, 146, 255);
+  }
+  .hover_card {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+  }
+  
+  .hover_card:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+  
+    box-shadow: 10px 10px 50px rgb(255, 251, 2);
+  }
+  
+  .hover_card .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
+  
+  .hover_card .img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .hover_card:hover .img-container {
+    transform: rotateY(-135deg);
+  }
+  
+  .hover_card .hover_card-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+  }
+  
+  .hover_card .hover_card-details h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #103cff;
+  }
+  
+  .hover_card .hover_card-details p {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 1.1em;
+  }
