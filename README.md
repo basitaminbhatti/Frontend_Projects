@@ -23,19 +23,101 @@ These practical and enjoyable projects showcase diverse applications of JavaScri
 <div align="center">
   
   ## Project 1: Expanding Cards 
- <img height="250" src="https://i.giphy.com/media/Yv6aInfBPvQP9Ldab8/giphy.webp"  />
+ <img height="250" src="https://i.giphy.com/media/mnX7JzVwGiFDGO6TK1/giphy.webp"  />
 
 [![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2001%20Expanding%20Cards "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
 </div>
 
 <div align="center">
 
   ## Project 2: Scroll Animation 
- <img height="250" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExazJ2YnprdmtqN2xnNnowMXAzODUzeWIzdG9xMGkxaGJoZXowOWM2ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/0ca58mzU5u3ylNklRK/giphy.gif"  />
+ <img height="250" src="https://i.giphy.com/media/QPm0wyVkKl0BLqkCfQ/giphy.webp"  />
  
 [![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2002%20Scroll%20Animation "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
 
 </div>
+
+<div align="center">
+  
+  ## Project 3: Blurry Loading
+ <img height="250" src="https://i.giphy.com/media/2vrPSxpuTrKEOr6Rvf/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2003%20Blurry%20Loading "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+<div align="center">
+  
+  ## Project 4: Form Wave
+ <img height="250" src="https://i.giphy.com/media/JncbdKU6D98qrwa19p/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2004%20Form%20Wave "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
+<div align="center">
+  
+  ## Project 5: Hidden Search Box
+ <img height="250" src="https://i.giphy.com/media/Kd5RuOVB3DTlSz2mhX/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2005%20Hidden%20Search%20Box "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+<div align="center">
+  
+  ## Project 6: Nayapay Debit Card
+ <img height="250" src="https://i.giphy.com/media/SdyzJWttPntWsu5Zyi/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2006%20Nayapay%20Debit%20Card "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
+<div align="center">
+  
+  ## Project 7: Hover Book Card
+ <img height="250" src="https://i.giphy.com/media/WRWc3DyUfDOG1dtvqw/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2007%20Hover%20Book%20Card "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
+<div align="center">
+  
+  ## Project 8: 3D Card Animation
+ <img height="250" src="https://i.giphy.com/media/yhJctAJ1aV3CTUjNgz/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2008%203D%20Card%20Animation "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
+<div align="center">
+  
+  ## Project 9: FAQ Collapse
+ <img height="250" src="https://i.giphy.com/media/ZwGaFeI9KjbZljY00R/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2009%20FAQ%20Collapse "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
+<div align="center">
+  
+  ## Project 10: Slide Login and Signup Form
+ <img height="250" src="https://i.giphy.com/media/jdqBRNyooX7D6uc2Cp/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2010%20Slide%20Login%20and%20Signup%20Form "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
+<div align="center">
+  
+  ## Project 11: Error 404 Page
+ <img height="250" src="https://i.giphy.com/media/NWelN7pINbpkM57vNH/giphy.webp"  />
+
+[![View Code](https://i.imgur.com/s0mkSYd.png "View Code")](https://github.com/basitaminbhatti/Frontend_Projects/tree/main/Project%2011%20Error%20404 "View Code")[![View Code](https://i.imgur.com/gdlML1F.png "View Code")](# "View Code")
+</div>
+
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=basitaminbhatti&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=en&hide_border=false&order=1" height="200" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=basitaminbhatti&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=dark&hide_border=false&order=2" height="200" alt="languages graph"  />
