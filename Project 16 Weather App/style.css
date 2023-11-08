@@ -13,7 +13,7 @@ body{
 .card{
     width: 90%;
     max-width: 470px;
-    background:linear-gradient(135deg, #00feba, #5b548a);
+    background:linear-gradient(135deg, #6bc9ff, #04001d);
     color: #fff;
     text-align: center;
     margin: 100px auto 0;
@@ -61,7 +61,15 @@ body{
     margin-top: 30px;
 }
 
+.weather p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: auto;
+}
+
 .weather h1{
+    margin-top: 20px;
     font-size: 80px;
     font-weight: 400;
 }
@@ -95,4 +103,16 @@ body{
 .humidity, .wind{
     font-size: 20px;
     margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 14px;
+    display: none;
 }
