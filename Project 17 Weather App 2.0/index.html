@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="feather.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="date-dayname">Tuesday</h2><span class="date-day">15 Jan 2019</span><i class="location-icon"
+                    data-feather="map-pin"></i><span class="location">Paris, FR</span>
+            </div>
+            <div class="weather-container"><i id="weather-icon" class="weather-icon" data-feather="sun"></i>
+                <h1 class="weather-temp">29<sup>°c</sup></h1>
+                <h3 class="weather-desc">Sunny</h3>
+            </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation"> <span class="title">PRECIPITATION</span><span class="value precipitation-value">0 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity"> <span class="title">HUMIDITY</span><span class="value humidity-value">34 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind"> <span class="title">WIND</span><span class="value wind-value">0 km/h</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hour-container">
+                <ul class="hour-list">
+                    <li class="active"><i class="hour-icon" data-feather="sun"></i><span class="hour-name hour-one">9:00</span><span
+                            class="hour-temp temp-one">29°C</span></li>
+                    <li><i class="hour-icon" data-feather="cloud"></i><span class="hour-name hour-two">12:00</span><span
+                            class="hour-temp temp-two">21°C</span></li>
+                    <li><i class="hour-icon" data-feather="cloud-snow"></i><span class="hour-name hour-three">15:00</span><span
+                            class="hour-temp temp-three">08°C</span></li>
+                    <li><i class="hour-icon" data-feather="cloud-rain"></i><span class="hour-name hour-four">18:00</span><span
+                            class="hour-temp temp-four">19°C</span></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Enter City Name" spellcheck="false">
+            </div>
+            <div class="location-container">
+                <button class="location-button"> <i data-feather="map-pin"></i><span>Change location</span></button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
