@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
 :root {
-	--gradient: linear-gradient( 135deg, rgb(121, 1, 105) 10%, rgb(229, 81, 130) 100%);
+	--gradient: linear-gradient( 135deg, rgb(1, 73, 121) 10%, rgb(60, 200, 243) 100%);
 }
 
 * {
@@ -107,7 +107,7 @@ body {
 	left: 25px;
 }
 
-.weather-icon.feather {
+.weather-icon {
 	height: 60px;
 	width: auto;
 }

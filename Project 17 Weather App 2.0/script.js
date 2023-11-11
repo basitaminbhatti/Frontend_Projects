@@ -1,5 +1,5 @@
-// Use for data-feather for images, logo, icons
-    feather.replace();
+feather.replace();
+
 
 // API  from OPENWEATHERMAP
 const apiKey = "8a62abb5c478089c81df9c79a5772a4d";
@@ -11,7 +11,7 @@ const searchbox = document.querySelector(".search input");
 const searchbutton = document.querySelector(".location-button");
 
 
-// const weatherICON = document.querySelector(".weather-icon");
+const weatherICON = document.querySelector(".weather-icon");
 
 async function checkweather(city) {
     // apiURL_current
@@ -57,15 +57,47 @@ async function checkweather(city) {
     // WIND
     document.querySelector(".wind-value").innerHTML = weather_current.wind.speed + " km/h"
 
-    // Current Weather-Icon
-    document.getElementById("weather-icon").setAttribute("data-feather", "map");
-    
-
     // Current Tempertature
     document.querySelector(".weather-temp").innerHTML = Math.round(weather_current.main.temp) + "<sup>°c</sup>";
 
     // Current Description
     document.querySelector(".weather-desc").innerHTML = weather_current.weather[0].main;
+
+
+function weather_icon_image(){
+        // If Statement
+if (weather_current.weather[0].main === "Clear"){
+    weatherICON.src = "images/sun.svg"
+}
+else if (weather_current.weather[0].main == "Haze") {
+    weatherICON.src = "images/haze.svg"
+}
+else if (weather_current.weather[0].main == "Clouds") {
+    weatherICON.src = "images/cloud.svg"
+}
+else if (weather_current.weather[0].main == "Rain") {
+    weatherICON.src = "images/cloud-rain.svg"
+}
+else if (weather_current.weather[0].main == "Drizzle") {
+    weatherICON.src = "images/cloud-drizzle.svg"
+}
+else if (weather_current.weather[0].main == "Snow") {
+    weatherICON.src = "images/cloud-snow.svg"
+}
+else if (weather_current.weather[0].main == "Smoke") {
+    weatherICON.src = "images/smoke.png"
+}
+else if (weather_current.weather[0].main == "Mist") {
+    weatherICON.src = "images/mist.png"
+}
+else if (weather_current.weather[0].main == "Wind") {
+    weatherICON.src = "images/wind.svg"
+}
+else {
+    weatherICON.src = "images/weather.png"
+}
+
+}
 
     // 4 Next Days
     function four_hours(hour) {
@@ -106,3 +138,7 @@ searchbutton.addEventListener("click", () => {
 
 checkweather()
 
+
+
+
+// document.getElementById("weather-icon").setAttribute("data-feather", "sun");
