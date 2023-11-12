@@ -11,7 +11,16 @@ const searchbox = document.querySelector(".search input");
 const searchbutton = document.querySelector(".location-button");
 
 
-const weatherICON = document.querySelector(".weather-icon");
+const weather_ICON_main = document.querySelector(".weather-icon");
+const weather_ICON_next_01 = document.querySelector(".hour-icon-one");
+const weather_ICON_next_02 = document.querySelector(".hour-icon-two");
+const weather_ICON_next_03 = document.querySelector(".hour-icon-three");
+const weather_ICON_next_04 = document.querySelector(".hour-icon-four");
+
+
+const weather_city_image = document.querySelector(".weather-side");
+
+
 
 async function checkweather(city) {
     // apiURL_current
@@ -22,8 +31,8 @@ async function checkweather(city) {
     const response_next = await fetch(apiURL_next + city + `&appid=${apiKey}`);
     var weather_next = await response_next.json();
 
-    console.log("weather_current", weather_current)
-    console.log("weather_next", weather_next)
+    // console.log("weather_current", weather_current);
+    // console.log("weather_next", weather_next);
 
 
     // Day
@@ -46,10 +55,10 @@ async function checkweather(city) {
 
 
     // City Name + Country Code
-    document.querySelector(".location").innerHTML = weather_current.name + " , " + weather_current.sys.country;
+    document.querySelector(".location").innerHTML = weather_current.name + ", " + weather_current.sys.country;
 
-    // PRECIPITATION
-    // document.querySelector(".precipitation-value").innerHTML = weather_current.+" %"
+    //Pressure
+    document.querySelector(".pressure-value").innerHTML = weather_current.main.pressure + " mb"
 
     // HUMIDITY
     document.querySelector(".humidity-value").innerHTML = weather_current.main.humidity + " %"
@@ -64,40 +73,53 @@ async function checkweather(city) {
     document.querySelector(".weather-desc").innerHTML = weather_current.weather[0].main;
 
 
-function weather_icon_image(){
-        // If Statement
-if (weather_current.weather[0].main === "Clear"){
-    weatherICON.src = "images/sun.svg"
-}
-else if (weather_current.weather[0].main == "Haze") {
-    weatherICON.src = "images/haze.svg"
-}
-else if (weather_current.weather[0].main == "Clouds") {
-    weatherICON.src = "images/cloud.svg"
-}
-else if (weather_current.weather[0].main == "Rain") {
-    weatherICON.src = "images/cloud-rain.svg"
-}
-else if (weather_current.weather[0].main == "Drizzle") {
-    weatherICON.src = "images/cloud-drizzle.svg"
-}
-else if (weather_current.weather[0].main == "Snow") {
-    weatherICON.src = "images/cloud-snow.svg"
-}
-else if (weather_current.weather[0].main == "Smoke") {
-    weatherICON.src = "images/smoke.png"
-}
-else if (weather_current.weather[0].main == "Mist") {
-    weatherICON.src = "images/mist.png"
-}
-else if (weather_current.weather[0].main == "Wind") {
-    weatherICON.src = "images/wind.svg"
-}
-else {
-    weatherICON.src = "images/weather.png"
-}
+    let weather_Status_Des = weather_current.weather[0].main;
+    let weather_next_1 = weather_next.list[0].weather[0].main;
+    let weather_next_2 = weather_next.list[1].weather[0].main;
+    let weather_next_3 = weather_next.list[2].weather[0].main;
+    let weather_next_4 = weather_next.list[3].weather[0].main;
 
-}
+    function weather_icon_image(icon_change, icon_link) {
+        // If Statement
+        if (icon_change === "Clear") {
+            icon_link = "images/sun.svg"
+        }
+        else if (icon_change == "Haze") {
+            icon_link.src = "images/haze.svg"
+        }
+        else if (icon_change == "Clouds") {
+            icon_link.src = "images/cloud.svg"
+        }
+        else if (icon_change == "Rain") {
+            icon_link.src = "images/cloud-rain.svg"
+        }
+        else if (icon_change == "Drizzle") {
+            icon_link.src = "images/cloud-drizzle.svg"
+        }
+        else if (icon_change == "Snow") {
+            icon_link.src = "images/cloud-snow.svg"
+        }
+        else if (icon_change == "Smoke") {
+            icon_link.src = "images/smoke.png"
+        }
+        else if (icon_change == "Mist") {
+            icon_link.src = "images/mist.png"
+        }
+        else if (icon_change == "Wind") {
+            icon_link.src = "images/wind.svg"
+        }
+        else {
+            weatherICON.src = "images/weather.png"
+        }
+
+    }
+    weather_icon_image(weather_Status_Des, weather_ICON_main);
+    weather_icon_image(weather_next_1, weather_ICON_next_01);
+    weather_icon_image(weather_next_2, weather_ICON_next_02);
+    weather_icon_image(weather_next_3, weather_ICON_next_03);
+    weather_icon_image(weather_next_4, weather_ICON_next_04);
+
+
 
     // 4 Next Days
     function four_hours(hour) {
@@ -123,6 +145,38 @@ else {
     document.querySelector(".temp-four").innerHTML = Math.round(weather_next.list[3].main.temp) + "°C";
 
 
+
+    // Image
+    if (weather_current.name == "Karachi") {
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1610697579277-70a34dd4f436?q=80&w=1374&auto=format&fit=crop&i&w=675&q=80")';
+    }
+    else if (weather_current.name == "Lahore"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1595426496987-37c7113b24a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Multan"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1601050589568-13b1e991638a?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Islamabad"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1652362183275-887d5adb7077?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Berlin"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1597932552386-ad91621e4c8a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Dubai"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1546412414-e1885259563a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Mumbai"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1566552881560-0be862a7c445?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Paris"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1549144511-f099e773c147?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else if (weather_current.name == "Maldives"){
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1547528114-f4daa226e256?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
+    else{
+        weather_city_image.style.backgroundImage = 'url("https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")';
+    }
 
 }
 

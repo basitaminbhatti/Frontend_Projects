@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
 
 :root {
-	--gradient: linear-gradient( 135deg, rgb(1, 73, 121) 10%, rgb(60, 200, 243) 100%);
+	--gradient: linear-gradient( 135deg, rgb(6, 148, 243) 10%, rgb(23, 76, 92) 100%);
 }
 
 * {
@@ -72,7 +72,7 @@ body {
 	left: 0;
 	background-image: var(--gradient);
 	border-radius: 25px;
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 .date-container {
@@ -172,15 +172,15 @@ body {
 	-webkit-transform: scale(1.1);
 	    -ms-transform: scale(1.1);
 	        transform: scale(1.1);
-	background: #fff;
+	background: #777777;
 	color: #222831;
 	-webkit-box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2);
 	        box-shadow: 0 0 40px -5px rgba(0, 0, 0, 0.2)
 }
 
 .hour-list>li.active {
-	background: #fff;
-	color: #222831;
+	background: #04668d;
+	color: #ffffff;
 	border-radius: 10px;
 }
 
